@@ -669,7 +669,7 @@ public class ArkFile : Archive
             while (stringOffsets[hash] != 0)
             {
                 hash++;
-                if (hash >= stringOffsets.Length) hash = 1; // Index of 0 is reserved for empty string
+                if (hash >= stringOffsets.Length) hash = 0; // a 0 value, not index 0, marks an empty slot
             }
 
             stringOffsets[hash] = str.Value;
