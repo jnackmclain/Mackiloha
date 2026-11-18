@@ -261,3 +261,4 @@ imgui.ini
 
 # Shell script build
 BUILD/
+.DS_Store
